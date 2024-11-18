@@ -1,38 +1,53 @@
-.App {
-  text-align: center;
+.input-section {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.d-card-edit {
+  position: relative;
+  width: 235px;
+  height: 400px;
+  background-image: url("https://ik.imagekit.io/sathishkumar/digitalCardImages/1(1).png?updatedAt=1728202067701");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.input-section {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.option-button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 5px;
+  cursor: pointer;
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.option-button span {
+  font-size: 12px;
+  color: #6b4d8b;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.option-button.active {
+  background-color: #d4c2e0;
+  border-radius: 4px;
+}
+
+input[type="color"] {
+  width: 30px;
+  height: 30px;
+  border: none;
+  padding: 0;
+}
+
+.draggable-item {
+  position: absolute;
+  cursor: pointer;
 }
